@@ -1,6 +1,8 @@
 function func() {
+        let account_name = document.getElementById("id_textBox1").value;
         try {
-                this.name = "impact.rits"; //アカウント名
+                // this.name = "impact.rits"; //アカウント名
+                this.name = account_name;
                 $.ajax('https://www.instagram.com/' + this.name + '/', {
                         timeout: 20000,
                         datatype: 'html'
